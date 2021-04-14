@@ -1,0 +1,25 @@
+<?php
+include "stack.php";
+$stack = new Stack();
+$stack->push(5);
+$stack->push(12);
+$stack->push(8);
+$stack->push(7);
+$stack->push(6);
+var_dump($stack);
+echo "<hr>";
+$stack->pop();
+$stack->pop();
+$stack->pop();
+var_dump($stack);
+echo "<hr>";
+$stack->push(15);
+$stack->push(21);
+var_dump($stack);
+var_dump($stack->isEmpty());
+$stack->pop();
+$stack->pop();
+$stack->pop();
+$stack->pop();
+echo "<hr>";
+var_dump($stack->isEmpty());
